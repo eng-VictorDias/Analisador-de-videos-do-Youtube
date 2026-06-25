@@ -10,7 +10,7 @@ A arquitetura do script foi dividida em funções modulares para facilitar a man
 
 1. **`baixar_audio()` (Extração de Dados):**
    - Utiliza a biblioteca `yt-dlp` para acessar o link fornecido pelo usuário e fazer o download apenas da faixa de áudio (ignorando o vídeo para economizar banda e processamento).
-   - O áudio é convertido automaticamente para o formato `.mp3` usando FFmpeg.
+   - O áudio é convertido automaticamente para o formato `.mp3` usando FFmpeg (Certifique-se de ter o FFmpeg instalado na sua máquina, necessário para o yt-dlp).
 
 2. **`transcrever_audio()` (Transformação em Texto):**
    - Implementa o **OpenAI Whisper** (modelo `base`), uma rede neural de reconhecimento de fala robusta.
@@ -30,15 +30,4 @@ A arquitetura do script foi dividida em funções modulares para facilitar a man
 * **yt-dlp:** Extração de mídia do YouTube.
 * **OpenAI Whisper:** Transcrição de áudio para texto.
 * **OpenAI API (GPT-4o-mini):** Geração de resumos inteligentes.
-
-## ⚙️ Como rodar o projeto na sua máquina
-
-**1. Clone o repositório:**
-```bash
-git clone [https://github.com/SEU-USUARIO/nome-do-repositorio.git](https://github.com/SEU-USUARIO/nome-do-repositorio.git)
-cd nome-do-repositorio# 🎬 AI YouTube Summarizer (Resumo Automático de Vídeos)
-
-Um pipeline em Python que automatiza a extração, transcrição e sumarização de vídeos do YouTube utilizando Inteligência Artificial. 
-
-Este projeto foi desenvolvido para otimizar o consumo de conteúdo em vídeo, transformando horas de áudio em resumos estruturados e diretos ao ponto, demonstrando habilidades em integração de APIs, manipulação de arquivos e engenharia de prompts.
 
