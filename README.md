@@ -1,4 +1,4 @@
-# 🎬 AI YouTube Summarizer (Resumo Automático de Vídeos)
+# 🎬 Resumo Automático de Vídeos do Youtube
 
 Um pipeline em Python que automatiza a extração, transcrição e sumarização de vídeos do YouTube utilizando Inteligência Artificial. 
 
